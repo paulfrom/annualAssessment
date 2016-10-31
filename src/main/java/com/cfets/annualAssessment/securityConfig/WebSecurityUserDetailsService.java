@@ -1,7 +1,7 @@
-package com.example.securityConfig;
+package com.cfets.annualAssessment.securityConfig;
 
-import com.example.entity.Account;
-import com.example.service.AccountService;
+import com.cfets.annualAssessment.entity.Account;
+import com.cfets.annualAssessment.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

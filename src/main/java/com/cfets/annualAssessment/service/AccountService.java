@@ -1,7 +1,7 @@
-package com.example.service;
+package com.cfets.annualAssessment.service;
 
-import com.example.entity.Account;
-import com.example.jpa.AccountRepository;
+import com.cfets.annualAssessment.entity.Account;
+import com.cfets.annualAssessment.jpa.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

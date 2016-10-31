@@ -1,6 +1,6 @@
-package com.example.jpa;
+package com.cfets.annualAssessment.jpa;
 
-import com.example.entity.Account;
+import com.cfets.annualAssessment.entity.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

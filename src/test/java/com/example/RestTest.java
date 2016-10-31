@@ -1,7 +1,7 @@
-package com.example;
+package com.cfets.annualAssessment;
 
 import com.alibaba.fastjson.JSON;
-import com.example.entity.Account;
+import com.cfets.annualAssessment.entity.Account;
 import org.apache.http.HttpResponse;
 import org.apache.http.auth.AuthScope;
 import org.apache.http.auth.UsernamePasswordCredentials;

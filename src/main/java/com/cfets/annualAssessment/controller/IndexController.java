@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.cfets.annualAssessment.controller;
 
-import com.example.entity.Account;
-import com.example.service.AccountService;
+import com.cfets.annualAssessment.entity.Account;
+import com.cfets.annualAssessment.service.AccountService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;

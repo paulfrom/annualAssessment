@@ -1,6 +1,6 @@
-package com.example.securityConfig;
+package com.cfets.annualAssessment.securityConfig;
 
-import com.example.entity.Account;
+import com.cfets.annualAssessment.entity.Account;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,6 +1,6 @@
-package com.example.securityConfig;
+package com.cfets.annualAssessment.securityConfig;
 
-import com.example.filter.SimpleCORSFilter;
+import com.cfets.annualAssessment.filter.SimpleCORSFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

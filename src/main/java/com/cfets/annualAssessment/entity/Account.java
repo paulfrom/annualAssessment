@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.cfets.annualAssessment.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;

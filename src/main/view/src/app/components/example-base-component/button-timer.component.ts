@@ -13,7 +13,7 @@ import { MyTimerService } from '../../services/example-timer.service';
 
 export class ButtonTimerComponent{
 
-  status = 'Timer stoped';
+  status = 'Timer';
   time = 0;
 
   constructor(
@@ -21,10 +21,11 @@ export class ButtonTimerComponent{
   ){}
 
   startTimer(){
-    this.status = 'Timer started';
-
-    this.myTymeService.getTime().
-      subscribe(time => this.time = time);
+    if(this.status.indexOf("started")){
+      this.status = "234";
+    }else {
+      this.status = 'stoped';
+    }
   }
 
 }
