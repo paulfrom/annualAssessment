@@ -35,6 +35,7 @@
     "ts-loader": "latest",
     "typescript": "latest",
     "typings": "latest",
+    "url-loader": "^0.5.7",
     "webpack": "latest",
     "webpack-cleanup-plugin": "latest",
     "webpack-dev-server": "latest",
