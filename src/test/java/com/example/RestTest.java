@@ -33,13 +33,14 @@ import java.net.URISyntaxException;
  */
 public class RestTest {
     private static final Logger logger = Logger.getLogger(RestTest.class);
-    CredentialsProvider credsProvider = new BasicCredentialsProvider();
-    {
-        credsProvider.setCredentials(
-                new AuthScope("localhost",8088),
-                new UsernamePasswordCredentials("paul", "111111"));
-    }
-    final CloseableHttpClient httpClient = HttpClientBuilder.create().setDefaultCredentialsProvider(credsProvider).build();
+//    CredentialsProvider credsProvider = new BasicCredentialsProvider();
+//    {
+//        credsProvider.setCredentials(
+//                new AuthScope("localhost",8088),
+//                new UsernamePasswordCredentials("paul", "111111"));
+//    }
+    final CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+//    final CloseableHttpClient httpClient = HttpClientBuilder.create().setDefaultCredentialsProvider(credsProvider).build();
 
 
 
@@ -50,15 +51,15 @@ public class RestTest {
 //                .setPath("/index/1").build();
 //        ResponseEntity<Account> result = restTest.getRestTemplate().getForEntity(url, Account.class);
         Account account = new Account();
-        account.setAccountId(11L);
-        account.setAccountName("selena");
+        account.setAccountId(7L);
+        account.setAccountName("selena45");
         account.setUsername("谷艳");
-        account.setPassword("123456");
+        account.setPassword("123457");
         account.setNewpassword("111111");
 //        ResponseEntity<Account> result = restTest.getRestTemplate().put("http://localhost:8088/updateAccount/11",account);
 //        restTest.getRestTemplate().put("http://localhost:8088/updateAccount/11",account);
         HttpEntity<Account> httpEntity = new HttpEntity<>(account);
-        ResponseEntity<Account> result = restTest.getRestTemplate().exchange("http://localhost:8088/updateAccount/11", HttpMethod.PUT,httpEntity,Account.class);
+        ResponseEntity<Account> result = restTest.getRestTemplate().exchange("http://localhost:8088/updateAccount/7", HttpMethod.PUT,httpEntity,Account.class);
         System.out.println(result.getStatusCode());
         System.out.println(result.getBody());
     }
