@@ -1,4 +1,4 @@
-package com.cfets.annualAssessment;
+package com.example;
 
 import com.alibaba.fastjson.JSON;
 import com.cfets.annualAssessment.entity.Account;
@@ -51,7 +51,7 @@ public class RestTest {
 //                .setPath("/index/1").build();
 //        ResponseEntity<Account> result = restTest.getRestTemplate().getForEntity(url, Account.class);
         Account account = new Account();
-        account.setAccountId(7L);
+//        account.setAccountId(7L);
         account.setAccountName("selena45");
         account.setUsername("谷艳");
         account.setPassword("123457");

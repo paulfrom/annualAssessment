@@ -12,17 +12,15 @@ import javax.persistence.*;
  * Date: 2016/10/12
  * Desc:
  */
-@Entity(name = "account")
 @Data
-public class Account extends ResourceSupport{
+public class Account{
     @Id
-    @GeneratedValue
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long accountId;
-    @Column(unique=true)
     private String accountName;
     @JsonIgnore
     private String password;
-    @Column(nullable = false, unique = true)
     private String username;
     @Transient
     private String newpassword;

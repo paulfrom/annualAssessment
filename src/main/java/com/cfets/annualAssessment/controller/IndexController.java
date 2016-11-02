@@ -31,10 +31,10 @@ public class IndexController {
     @RequestMapping(value = "/index/{id}",method = RequestMethod.GET)
     public ResponseEntity<?> index(@PathVariable("id")long id){
         Account account = accountService.getAccountById(id);
-        List<Link> linkList = new ArrayList<>();
-        linkList.add(linkTo(IndexController.class).slash("accounts").withRel("principal"));
-        linkList.add(linkTo(IndexController.class).slash("account").slash(account.getAccountId()).withRel("accountId"));
-        account.add(linkList);
+//        List<Link> linkList = new ArrayList<>();
+//        linkList.add(linkTo(IndexController.class).slash("accounts").withRel("principal"));
+//        linkList.add(linkTo(IndexController.class).slash("account").slash(account.getAccountId()).withRel("accountId"));
+//        account.add(linkList);
         return new ResponseEntity<>(account, HttpStatus.OK);
     }
 
