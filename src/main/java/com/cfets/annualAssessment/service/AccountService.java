@@ -2,11 +2,12 @@ package com.cfets.annualAssessment.service;
 
 import com.cfets.annualAssessment.entity.Account;
 import com.cfets.annualAssessment.mapper.AccountMapper;
-import com.sun.tools.javac.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
+
+import java.util.List;
 
 /**
  * Created with UserDetailService
@@ -42,13 +43,17 @@ public class AccountService {
         return account;
     }
 
-    public void deleteAccount(long id){
-        System.out.print(accountMapper.deleteByPrimaryKey(id));
+    public boolean deleteAccount(long id){
+        return accountMapper.deleteByPrimaryKey(id)>0;
     }
 
     public Account updateAccount(Account account) {
         account.setPassword(passwordEncoder.encode(account.getNewpassword()));
         accountMapper.updateByPrimaryKey(account);
         return account;
+    }
+
+    public List<Account> getAccountAll() {
+        return  accountMapper.selectAll();
     }
 }
