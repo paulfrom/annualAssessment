@@ -7,4 +7,5 @@ import com.cfets.annualAssessment.util.MyMapper;
  * Created by liusonglin on 2016/11/2.
  */
 public interface AccountMapper extends MyMapper<Account> {
+    Account selectByName(String name);
 }

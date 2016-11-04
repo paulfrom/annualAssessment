@@ -13,7 +13,7 @@ export class AuthHttpService{
     console.log(this.http)
     this.http=http;
     console.log(this.http)
-    let headers = new Headers({'Content-Type':'applicastion/json','Authorization':'Basic c2VsZW5hNDU6MTExMTEx'})
+    let headers = new Headers({'Content-Type':'applicastion/json','Authorization':'Basic dGVzdDoxMTExMTE='})
     this.options = new RequestOptions({headers:headers})
   }
 

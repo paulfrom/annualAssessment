@@ -32,8 +32,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().addFilterBefore(new SimpleCORSFilter(),ChannelProcessingFilter.class).authorizeRequests()
-                .antMatchers("/**").permitAll()
+        http.csrf().disable();
+        http.csrf().disable().authorizeRequests()
+                .antMatchers(HttpMethod.POST, "/accounts").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .httpBasic();

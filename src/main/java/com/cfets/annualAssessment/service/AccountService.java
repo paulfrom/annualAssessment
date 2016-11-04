@@ -26,11 +26,9 @@ public class AccountService {
     private AccountMapper accountMapper;
 
     public Account getAccountByUserName(String name){
-        Example example = new Example(Account.class);
-        example.createCriteria().andGreaterThan("accountName", name);
-        List<Account> list = (List<Account>) accountMapper.selectByExample(name);
+            Account account = accountMapper.selectByName(name);
 //        return accountRepository.findByAccountName(name);
-        return list.get(0);
+        return account;
     }
 
     public Account getAccountById(long id) {

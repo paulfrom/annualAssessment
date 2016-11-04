@@ -50,18 +50,18 @@ public class RestTest {
 //                .setHost("localhost").setPort(8088)
 //                .setPath("/index/1").build();
 //        ResponseEntity<Account> result = restTest.getRestTemplate().getForEntity(url, Account.class);
-        Account account = new Account();
-//        account.setAccountId(7L);
-        account.setAccountName("selena45");
-        account.setUsername("谷艳");
-        account.setPassword("123457");
-        account.setNewpassword("111111");
-//        ResponseEntity<Account> result = restTest.getRestTemplate().put("http://localhost:8088/updateAccount/11",account);
-//        restTest.getRestTemplate().put("http://localhost:8088/updateAccount/11",account);
-        HttpEntity<Account> httpEntity = new HttpEntity<>(account);
-        ResponseEntity<Account> result = restTest.getRestTemplate().exchange("http://localhost:8088/updateAccount/7", HttpMethod.PUT,httpEntity,Account.class);
-        System.out.println(result.getStatusCode());
-        System.out.println(result.getBody());
+//        Account account = Account.builder().;
+////        account.setAccountId(7L);
+//        account.setAccountName("selena45");
+//        account.setUsername("谷艳");
+//        account.setPassword("123457");
+//        account.setNewpassword("111111");
+////        ResponseEntity<Account> result = restTest.getRestTemplate().put("http://localhost:8088/updateAccount/11",account);
+////        restTest.getRestTemplate().put("http://localhost:8088/updateAccount/11",account);
+//        HttpEntity<Account> httpEntity = new HttpEntity<>(account);
+//        ResponseEntity<Account> result = restTest.getRestTemplate().exchange("http://localhost:8088/updateAccount/7", HttpMethod.PUT,httpEntity,Account.class);
+//        System.out.println(result.getStatusCode());
+//        System.out.println(result.getBody());
     }
 
 

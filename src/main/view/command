@@ -1,0 +1,5 @@
+cnpm install
+cnpm -g install webpack
+cnpm -g install webpack-dev-server
+npm start
+npm build

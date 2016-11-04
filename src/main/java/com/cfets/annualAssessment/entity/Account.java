@@ -2,6 +2,7 @@ package com.cfets.annualAssessment.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.experimental.Builder;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.hateoas.ResourceSupport;
 
